@@ -19,3 +19,10 @@ private:
     string materia;
     int experiencia;
 };
+int main() {
+    Profesor profesor("Jose Jurado", 18, "Programacion", 2);
+
+    profesor.mostrar_info_profesor();
+
+    return 0;
+}
