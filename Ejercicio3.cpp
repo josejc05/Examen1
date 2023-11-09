@@ -13,7 +13,7 @@ int main(){
 
     intercambiar(ptr1, ptr2);//llamamos a la funcion
 
-    cout << "Valores intercambiados: num1 = " << n1 << ", num2 = " << n2 << endl;//imprimimos los valores intercambiados
+    cout << "Valores intercambiados: n1 = " << n1 << ", n2 = " << n2 << endl;//imprimimos los valores intercambiados
 
     return 0;
 }
