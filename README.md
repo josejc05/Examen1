@@ -1,9 +1,9 @@
 # Examen1
 https://github.com/josejc05/Examen1.git
 Parte 1:
-Pregunta 1: Respuesta: d
-Pregunta 2: Respuesta: b
-Pregunta 3: Respuesta: b
+Pregunta 1: Respuesta: d;
+Pregunta 2: Respuesta: b;
+Pregunta 3: Respuesta: b;
 Parte 3:
 Pregunta 1:
 La programación procedimental se basa en organizar el código en una serie de funciones que operan en datos separados, mientras que la programación orientada a objetos se enfoca en crear objetos que combinan datos y funciones relacionadas. C++ brinda soporte para ambos enfoques permitiendo la definición de funciones globales y la creación de clases y objetos que encapsulan datos y comportamiento, lo que proporciona flexibilidad para abordar distintos tipos de problemas de programación.
