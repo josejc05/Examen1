@@ -21,6 +21,6 @@ int main() {
         cout << "Excepción atrapada: " << mensaje << endl;
     }
 
-    cout << "El programa continúa después de la excepción." << endl;//imprimimos el mensaje
+    cout << "Este programa continúa después de la excepción." << endl;//imprimimos el mensaje
     return 0;
 }
