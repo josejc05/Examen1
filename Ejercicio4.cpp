@@ -14,6 +14,13 @@ int main() {
     cin >> numerador;
     cout << "Ingrese el denominador: ";
     cin >> denominador;
+    try {
+        int resultado = divide(numerador, denominador);
+        cout << "Resultado de la división: " << resultado << endl;
+    } catch (const char* mensaje) {
+        cout << "Excepción atrapada: " << mensaje << endl;
+    }
 
+    cout << "El programa continúa después de la excepción." << endl;
     return 0;
 }
