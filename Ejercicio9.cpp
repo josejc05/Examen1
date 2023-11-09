@@ -3,9 +3,9 @@
 #include <string>
 
 using namespace std;
-class MateriaRegistradaException {
+class MateriaYaRegistradaException {
 public:
-    MateriaRegistradaException(const string& materia) : materia(materia) {}
+    MateriaYaRegistradaException(const string& materia) : materia(materia) {}
 
     string getMateria() const {
         return materia;
@@ -21,7 +21,7 @@ public:
     void registrar_materia(const string& materia) {
         for (const string& materiaRegistrada : materias) {
             if (materiaRegistrada == materia) {
-                throw MateriaRegistradaException(materia);
+                throw MateriaYaRegistradaException(materia);
             }
         }
         materias.push_back(materia);
@@ -48,7 +48,7 @@ int main() {
         estudiante.registrar_materia("Ciencias");
 
         estudiante.listar_materias();
-    } catch (const MateriaRegistradaException& ex) {
+    } catch (const MateriaYaRegistradaException& ex) {
         cerr << "Error: La materia '" << ex.getMateria() << "' ya ha sido registrada." << endl;
     }
 
