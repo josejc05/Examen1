@@ -13,3 +13,9 @@ public:
         cout << "Materia impartida: " << materia << endl;
         cout << "Anos de experiencia: " << experiencia << " anos" << endl;
     }
+private:
+    string nombre;
+    int edad;
+    string materia;
+    int experiencia;
+};
