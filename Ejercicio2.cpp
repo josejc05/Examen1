@@ -18,3 +18,9 @@ class Estudiante{
             cout<<"Grado: "<<grado<<endl;
         }
 };
+int main(){
+    Estudiante estudiante1;
+    cout<<"Informacion del estudiante"<<endl;
+    estudiante1.mostrar_info();
+    return 0;
+}
