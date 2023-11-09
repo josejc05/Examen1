@@ -21,7 +21,7 @@ public:
     void registrar_materia(const string& materia) {
         for (const string& materiaRegistrada : materias) {
             if (materiaRegistrada == materia) {
-                throw MateriaYaRegistradaException(materia);
+                throw MateriaRegistradaException(materia);
             }
         }
         materias.push_back(materia);
@@ -38,3 +38,19 @@ private:
     string nombre;
     vector<string> materias;
 };
+int main() {
+    Estudiante estudiante("Juan");
+
+    try {
+        estudiante.registrar_materia("Matematicas");
+        estudiante.registrar_materia("Historia");
+        estudiante.registrar_materia("Matematicas");
+        estudiante.registrar_materia("Ciencias");
+
+        estudiante.listar_materias();
+    } catch (const MateriaRegistradaException& ex) {
+        cerr << "Error: La materia '" << ex.getMateria() << "' ya ha sido registrada." << endl;
+    }
+
+    return 0;
+}
