@@ -15,9 +15,9 @@ private://atributos de la clase
     string estado;
 };
 int main() {
-    registroAsistencia asistencia1("2023-11-08", "Tarde");//creamos los objetos
+    registroAsistencia asistencia1("2023-11-08", "Asistió");//creamos los objetos
     registroAsistencia asistencia2("2023-11-09", "Falta");
-    registroAsistencia asistencia3("2023-11-10", "Asistencia");
+    registroAsistencia asistencia3("2023-11-10", "Tardanza");
     asistencia1.mostrar_asistencia();//llamamos al metodo
     asistencia2.mostrar_asistencia();
     asistencia3.mostrar_asistencia();
